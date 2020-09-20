@@ -1,6 +1,8 @@
 **ꟻLIP: A Difference Evaluator for Alternating Images
 High Performance Graphics, 2020.**
 
+> **NOTE** these files are the copy of those provided in https://research.nvidia.com/sites/default/files/pubs/2020-07_FLIP/flip-cpp.zip - that I'm not related in this work in any way, this repository is just a convenient copy, including a prebuilt [FLIP.exe](https://github.com/rotoglup/nvidia-flip-cpp/releases).
+
 by Pontus Andersson, Jim Nilsson, Tomas Akenine-Moller, Magnus Oskarsson, Kalle Astrom, and Mark D. Fairchild
 
 Pointer to the paper: https://research.nvidia.com/publication/2020-07_FLIP
