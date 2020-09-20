@@ -19,3 +19,35 @@ code by Pontus Andersson, Jim Nilsson, and Tomas Akenine-Moller
 - Input images are assumed to be in sRGB space and in the [0,1] range.
 - Pooling code is contained in `pooling.h`.
 - FLIP is contained in `FLIP.cpp`.
+
+# Command line usage
+
+```
+FLIP v1.0
+Usage: flip.exe <reference.{jpg|png}> <test.{jpg|png}> [options]
+
+Options:
+     -help                     #  Show this text
+     -v <[0-2}>                #  Verbosity: 0 = silent, 1 = pooled values (default), >1 = verbose
+
+     -heatmap <heatmap.png>    #  Generate heatmap image
+     -nomagma                  #  Grayscale (FLIP values) instead of Magma heatmap (with "-heatmap")
+
+     -histogram <filename>     #  Pooling output (<filename>.csv and <filename>.py files generated)
+     -log                      #  Log10 on y-axis in the Python pooling histogram (with "-histogram").
+
+     -ppd <pixels per degree>
+
+        XOR
+
+     -monitorDistance <distance to monitor in meters>
+     -monitorWidth <width of monitor in meters>
+     -monitorPixelsX <width of the monitor's in pixels>
+
+  Note that you either set the ppd XOR the other monitor values (i.e., not both).
+Default values:
+    monitorDistance:    0.7 meters
+    monitorWidth:       0.7 meters
+    monitorResolutionX: 3840 pixels
+    which gives 67.0206 pixels per degree (ppd)
+```
